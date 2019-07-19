@@ -66,16 +66,12 @@ public class ErinConverter {
 	private static void printDots() {
 		try {
 			System.out.print("\nStarting Erin's file converter .");
-			Thread.sleep(1000);
-			System.out.print("..");
-			Thread.sleep(1000);
-			System.out.print("..");
-			Thread.sleep(1000);
-			System.out.print("..");
-			Thread.sleep(1000);
-			System.out.print("..");
-			Thread.sleep(1000);
-			System.out.print("..");
+			
+			for (int i = 0; i < 5; i++) {
+				Thread.sleep(1000);
+				System.out.print("..");
+			}
+			
 			Thread.sleep(1000);
 			System.out.println(".\n");
 		} catch (InterruptedException e) {
